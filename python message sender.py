@@ -39,7 +39,7 @@ def btn_click():
     if r:
         showinfo("Send Success", "Successfully sent")
     else:
-        showerror("Error", "Something went wrong..")
+        showerror("Error 404!", "Something went wrong..")
 
 
 # Creating GUI
