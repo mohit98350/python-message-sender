@@ -4,13 +4,13 @@
 # In[2]:
 
 
-pip install requests
+pip install requests #install requests using pip
 
 
 # In[3]:
 
 
-import requests
+import requests #import requests
 import json
 from tkinter import *
 from tkinter.messagebox import showinfo, showerror
@@ -37,9 +37,9 @@ def btn_click():
     msg = textMsg.get("1.0", END)
     r = send_sms(num, msg)
     if r:
-        showinfo("Send Success", "Successfully sent")
+        showinfo("Send Success", "Successfully sent") #sends the success response to the system
     else:
-        showerror("Error 404!", "Something went wrong..")
+        showerror("Error 404!", "Something went wrong..") #shows an error if its not found
 
 
 # Creating GUI
@@ -50,7 +50,7 @@ font = ("Helvetica", 22, "bold")
 textNumber = Entry(root, font=font)
 textNumber.pack(fill=X, pady=20)
 textMsg = Text(root)
-textMsg.pack(fill=X)
+textMsg.pack(fill=X) #pack up the message
 sendBtn = Button(root, text="SEND SMS", command=btn_click)
 sendBtn.pack()
 root.mainloop()
